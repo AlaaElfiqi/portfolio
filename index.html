@@ -84,7 +84,7 @@
     .hero-content p {
       font-size: 1.1rem;
       color: #d8c8ef;
-      max-width: 700px;
+      max-width: 760px;
       margin: 0 auto 24px;
     }
 
@@ -102,6 +102,7 @@
       color: white;
       border: 1px solid rgba(180, 108, 255, 0.35);
       background: rgba(255,255,255,0.03);
+      display: inline-block;
     }
 
     .btn.primary {
@@ -157,7 +158,7 @@
 
     .about-box,
     .contact-box {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
       background: #121212;
       border: 1px solid rgba(180, 108, 255, 0.35);
@@ -168,7 +169,8 @@
 
     .project-card p,
     .about-box p,
-    .contact-box p {
+    .contact-box p,
+    .publication-card p {
       color: #e0d9ea;
     }
 
@@ -212,6 +214,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
       <a href="#contact" class="resume-btn">Resume</a>
     </nav>
@@ -219,8 +222,12 @@
 
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Hello, I am Your Name</h1>
-      <p>I build robots, computer vision systems, and smart autonomous projects. Welcome to my free portfolio website.</p>
+      <h1>Hello, I am Alaa Elfiqi</h1>
+      <p>
+        Robotics Engineer specializing in AI, computer vision, autonomous systems, VR-based simulation,
+        and human–AI interaction. I build intelligent systems using robotics, physiological sensing,
+        and data-driven analysis to improve real-world performance and safety.
+      </p>
       <div class="hero-buttons">
         <a class="btn primary" href="#projects">See My Projects</a>
         <a class="btn" href="#contact">Contact Me</a>
@@ -230,43 +237,55 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p class="section-subtitle">A short introduction about you.</p>
+    <p class="section-subtitle">Robotics, AI, and intelligent human–machine interaction.</p>
     <div class="about-box">
       <p>
-        I am a robotics engineer who enjoys building autonomous systems, writing code, and solving real-world problems with robots. I am interested in computer vision, SLAM, control systems, and intelligent machines.
+        I am a Robotics Engineer and Master’s graduate in Robotics, Control and Smart Systems from
+        The American University in Cairo. My work focuses on robotics and AI, brain–computer interfaces,
+        driver assistance systems, VR-based experiments, and biomedical signal processing. I enjoy building
+        systems that connect intelligent software with real human behavior through robotics, sensors,
+        and immersive simulation environments.
       </p>
     </div>
   </section>
 
   <section id="skills">
     <h2>My Skills</h2>
-    <p class="section-subtitle">Things I use in robotics engineering.</p>
+    <p class="section-subtitle">Technical tools and areas I use in robotics engineering.</p>
     <div class="card-grid">
       <div class="card">
         <h3>Programming</h3>
         <ul>
           <li>Python</li>
           <li>C++</li>
+          <li>C</li>
           <li>MATLAB</li>
-          <li>ROS</li>
+          <li>Arduino</li>
+          <li>LabVIEW</li>
         </ul>
       </div>
+
       <div class="card">
-        <h3>Computer Vision</h3>
+        <h3>AI, Vision & Data</h3>
         <ul>
-          <li>Object Detection</li>
-          <li>Segmentation</li>
-          <li>Camera Calibration</li>
-          <li>Visual SLAM</li>
+          <li>YOLO and CNNs</li>
+          <li>Image Processing</li>
+          <li>EEG Signal Processing</li>
+          <li>Machine Learning (KNN, SVM)</li>
+          <li>Statistical Analysis (ANOVA, Correlation)</li>
+          <li>Psychometric Evaluations</li>
         </ul>
       </div>
+
       <div class="card">
-        <h3>Robotics</h3>
+        <h3>Robotics & Systems</h3>
         <ul>
-          <li>PID Control</li>
-          <li>Path Planning</li>
-          <li>Kalman Filter</li>
           <li>Autonomous Navigation</li>
+          <li>Control Systems</li>
+          <li>ArduPilot</li>
+          <li>CARLA and DReyeVR</li>
+          <li>SolidWorks and Stress Analysis</li>
+          <li>Proteus and PCB Design</li>
         </ul>
       </div>
     </div>
@@ -274,19 +293,79 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <p class="section-subtitle">A few things I have built.</p>
+    <p class="section-subtitle">Selected robotics, AI, and research projects.</p>
     <div class="card-grid">
       <div class="card project-card">
-        <h3>Autonomous Mobile Robot</h3>
-        <p>I built a robot that can move, avoid obstacles, and navigate indoor spaces.</p>
+        <h3>Driver Attention System using ChatGPT, VR, and EEG</h3>
+        <p>
+          Designed VR-based driving experiments using CARLA and DReyeVR with EEG, GSR, heart rate,
+          and conversational AI in Arabic to study stress and driving performance. Applied fuzzy logic,
+          questionnaire analysis, and multimodal sensing for evaluation.
+        </p>
       </div>
+
       <div class="card project-card">
-        <h3>Object Detection System</h3>
-        <p>I trained a computer vision model to detect objects for robotics tasks.</p>
+        <h3>Rescue Robot</h3>
+        <p>
+          Designed a tracked rescue robot for rough terrain and disaster response. Built the chassis,
+          damping system, and robotic arm in SolidWorks and validated the design through stress analysis.
+        </p>
       </div>
+
       <div class="card project-card">
-        <h3>Drone Path Planning</h3>
-        <p>I created a system for waypoint navigation and control for an autonomous drone.</p>
+        <h3>IRC Competition Robots</h3>
+        <p>
+          Developed both manual and autonomous competition robots. Designed the full mechanical system,
+          gripper mechanism, and H-bridge control circuits to support task execution and object handling.
+        </p>
+      </div>
+
+      <div class="card project-card">
+        <h3>EEG Emotion Recognition using Machine Learning</h3>
+        <p>
+          Built an end-to-end AI pipeline for EEG preprocessing, feature extraction, and classification
+          using models such as SVM and Random Forest for emotion recognition.
+        </p>
+      </div>
+
+      <div class="card project-card">
+        <h3>UAV Design and Control</h3>
+        <p>
+          Designed a UAV in SolidWorks with a focus on structural optimization and aerodynamics,
+          and implemented flight control using ArduPilot for stable navigation.
+        </p>
+      </div>
+
+      <div class="card project-card">
+        <h3>Colour Sorting by Robotic Arm</h3>
+        <p>
+          Built a color sorting system using Python, Arduino, image processing, and robotic arm kinematics
+          to detect and sort objects automatically.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="section-subtitle">Research publications and conference presentations.</p>
+    <div class="card-grid">
+      <div class="card publication-card">
+        <h3>IEEE MetroXRAINE 2025</h3>
+        <p>
+          Re-Engaging Driver Attention Using ChatGPT: A VR-EEG Study on Stress Impact and Driving Performance.
+          Proceedings of the 2025 IEEE International Conference on Metrology for Extended Reality,
+          Artificial Intelligence, and Neural Engineering, Ancona, Italy.
+        </p>
+      </div>
+
+      <div class="card publication-card">
+        <h3>ISMCS Conference Presentation 2024</h3>
+        <p>
+          Presented research on a pneumatically driven diaphragm pump in a mock circulation loop that simulates
+          hemodynamic conditions of the heart at the International Society for Medical Circulation Systems,
+          Utsunomiya, Japan.
+        </p>
       </div>
     </div>
   </section>
@@ -294,6 +373,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p class="section-subtitle">How to reach me.</p>
+    <div class="contact-box
     <div class="contact-box">
       <p>Email: yourname@email.com</p>
       <p>LinkedIn: linkedin.com/in/yourname</p>
