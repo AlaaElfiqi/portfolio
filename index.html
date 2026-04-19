@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Robotics Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #05010a 0%, #120018 100%);
+      color: white;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.92);
+      border-bottom: 1px solid rgba(162, 89, 255, 0.35);
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #b46cff;
+    }
+
+    .resume-btn {
+      background: #8b5cf6;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 90px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #d8c8ef;
+      max-width: 700px;
+      margin: 0 auto 24px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      color: white;
+      border: 1px solid rgba(180, 108, 255, 0.35);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .btn.primary {
+      background: #8b5cf6;
+      border: none;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #d8c8ef;
+      margin-bottom: 40px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #121212;
+      border: 1px solid rgba(180, 108, 255, 0.35);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.18);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 28px rgba(162, 89, 255, 0.30);
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+      font-size: 1.3rem;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+      color: #eaeaea;
+    }
+
+    .about-box,
+    .contact-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #121212;
+      border: 1px solid rgba(180, 108, 255, 0.35);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 0 20px rgba(128, 0, 255, 0.18);
+    }
+
+    .project-card p,
+    .about-box p,
+    .contact-box p {
+      color: #e0d9ea;
+    }
+
+    .contact-links {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      color: #bca9d8;
+      border-top: 1px solid rgba(162, 89, 255, 0.2);
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 16px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🤖 Your Name</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="resume-btn">Resume</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I am Your Name</h1>
+      <p>I build robots, computer vision systems, and smart autonomous projects. Welcome to my free portfolio website.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projects">See My Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="section-subtitle">A short introduction about you.</p>
+    <div class="about-box">
+      <p>
+        I am a robotics engineer who enjoys building autonomous systems, writing code, and solving real-world problems with robots. I am interested in computer vision, SLAM, control systems, and intelligent machines.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p class="section-subtitle">Things I use in robotics engineering.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>MATLAB</li>
+          <li>ROS</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Computer Vision</h3>
+        <ul>
+          <li>Object Detection</li>
+          <li>Segmentation</li>
+          <li>Camera Calibration</li>
+          <li>Visual SLAM</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Robotics</h3>
+        <ul>
+          <li>PID Control</li>
+          <li>Path Planning</li>
+          <li>Kalman Filter</li>
+          <li>Autonomous Navigation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="section-subtitle">A few things I have built.</p>
+    <div class="card-grid">
+      <div class="card project-card">
+        <h3>Autonomous Mobile Robot</h3>
+        <p>I built a robot that can move, avoid obstacles, and navigate indoor spaces.</p>
+      </div>
+      <div class="card project-card">
+        <h3>Object Detection System</h3>
+        <p>I trained a computer vision model to detect objects for robotics tasks.</p>
+      </div>
+      <div class="card project-card">
+        <h3>Drone Path Planning</h3>
+        <p>I created a system for waypoint navigation and control for an autonomous drone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="section-subtitle">How to reach me.</p>
+    <div class="contact-box">
+      <p>Email: yourname@email.com</p>
+      <p>LinkedIn: linkedin.com/in/yourname</p>
+      <p>GitHub: github.com/yourname</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:yourname@email.com">Email Me</a>
+        <a class="btn" href="https://github.com/yourname" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made by Your Name • Free portfolio website</p>
+  </footer>
+</body>
+</html>
